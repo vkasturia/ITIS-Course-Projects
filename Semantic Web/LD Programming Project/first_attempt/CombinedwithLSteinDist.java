@@ -8,7 +8,7 @@ package combinedwithlsteindist;
 
 /**
  *
- * @author vaibhav
+ * @author Vaibhav Kasturia (vbh18kas@gmail.com)
  */
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
@@ -177,24 +177,7 @@ public class CombinedwithLSteinDist {
 		}
                 
 	}
-//        for(Map.Entry<String, String> entry2: lakmap.entrySet()){
-//            String keyauthor_lak = entry2.getKey();
-//            System.out.println("Keyauthor_lak: "+ keyauthor_lak);
-//            String valuelak_details = entry2.getValue();
-//            System.out.println("LAK_Details:"+ valuelak_details);
-//        }
-//        for(Map.Entry<String, ArrayList<String>> entry: dblpmap.entrySet()){
-//            String keyauthor = entry.getKey();
-//            ArrayList<String> dblppublicationlist = new ArrayList<String>();
-//            dblppublicationlist = entry.getValue();
-//            System.out.println("Keyauthor: "+ keyauthor);
-//            String dblppublicationliststring = "";
-//            for(String s: dblppublicationlist){
-//                dblppublicationliststring += s + "\t";
-//            }
-//            System.out.println("Valuedblppublicationlist:"+ dblppublicationliststring);
-//        }
-        
+    
         //Comparing LAK Authors and DBLP Authors and combining results for the same author
         for(Map.Entry<String, String> entry2: lakmap.entrySet()){
             for(Map.Entry<String, ArrayList<String>> entry: dblpmap.entrySet()){
