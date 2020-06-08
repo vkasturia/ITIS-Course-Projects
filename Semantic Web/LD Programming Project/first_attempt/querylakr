@@ -1,0 +1,28 @@
+PREFIX swrc:<http://swrc.ontoware.org/ontology#>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX bibo:<http://purl.org/ontology/bibo/>
+
+SELECT ?author_name ?organization_name ?num_article ?articles
+WHERE{
+{SELECT ?author ?author_name count(?article) as ?num_article 
+       GROUP_CONCAT(?article; SEPARATOR=", ") AS ?articles
+WHERE{ 
+       ?article a bibo:Article.
+       ?article foaf:maker ?author.
+       ?author rdfs:label ?author_name
+     }GROUP BY ?author ?author_name
+      ORDER BY DESC(?num_article)
+      LIMIT 5000
+}
+{
+SELECT ?author2 ?author_name2 ?organization ?organization_name
+WHERE{ 
+       ?author2 swrc:affiliation ?organization.
+       ?author2 rdfs:label ?author_name2.
+       ?organization rdfs:label ?organization_name.
+}     
+}
+FILTER(CONTAINS(?author_name,?author_name2)) 
+}order by desc(?num_article)
+limit 2000

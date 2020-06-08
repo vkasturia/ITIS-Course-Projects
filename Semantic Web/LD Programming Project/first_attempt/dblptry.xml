@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+  <results>
+    <result>
+      <binding name="author_name2">
+        <literal>Istvan Beszteri</literal>
+      </binding>
+      <binding name="publication">
+        <uri>http://dblp.l3s.de/~diederich/d2r/resource/publications/conf/www/BeszteriV07</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="author_name2">
+        <literal>Petri Vuorimaa</literal>
+      </binding>
+      <binding name="publication">
+        <uri>http://dblp.l3s.de/~diederich/d2r/resource/publications/conf/www/BeszteriV07</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="author_name2">
+        <literal>Anis Charfi</literal>
+      </binding>
+      <binding name="publication">
+        <uri>http://dblp.l3s.de/~diederich/d2r/resource/publications/conf/www/CharfiM07</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="author_name2">
+        <literal>Istvan Beszteri</literal>
+      </binding>
+      <binding name="publication">
+        <uri>http://dblp.l3s.de/abc</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="author_name2">
+        <literal>TomCruise</literal>
+      </binding>
+      <binding name="publication">
+        <uri>Mission Impossible</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="author_name2">
+        <literal>TomCruise</literal>
+      </binding>
+      <binding name="publication">
+        <uri>Edge of Tomorrow</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="author_name2">
+        <literal>Robert De Niro</literal>
+      </binding>
+      <binding name="publication">
+        <uri>The Godfather</uri>
+      </binding>
+    </result>
+    <result>
+      <binding name="author_name2">
+        <literal>Robert De Niro</literal>
+      </binding>
+      <binding name="publication">
+        <uri>Silver Linings Playbook</uri>
+      </binding>
+    </result>
+  </results>
